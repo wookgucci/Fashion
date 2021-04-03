@@ -3,60 +3,100 @@
 <html>
   <head>
     <title>CONCEPT</title>
+    <style>
+      h1{
+        border-bottom: 1px solid gray; font-size: 40px; text-align: center; color:gray;
+        padding-bottom: 20px;
+      }
+      h3{
+        text-align:left; font-size: 23px; color:red;
+        margin:0px; padding-top: 50px;
+      }
+      a {
+        text-decoration: none; color:gray;
+      }
+      ul{
+        padding: 0px;
+      }
+      #서자 {
+        text-align: center; padding-top: 30px; font-size: 20px;
+      }
+      #구찌 {
+        text-align: center; padding-top: 30px;
+      }
+      #plus{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    @media(max-width:600px)
+    {
+        #plus, h3{
+          display: block; margin-left: 0px;
+          text-align: left;
+        }
+    }
+    </style>
   </head>
 
 <body>
-  <h1>CONCEPT</h1>
-  <p>
-  컬렉션의 기초 토대가 되고 제품 개발, 출시, 생산 과정에서 중요한 역할을 한다.<br>
-  컬렉션 시작 단계 부터 형성 하고, 디자인의 색상, 분위기, 원단 등을 사욤함에 있어 방향을 제시 해주는 역할.
-  </p>
-  <img src="1.jpg" width="20%"><img src="2.jpg" width="20%">
-  <p>
-    <ul>
-      <h3><li>요소</li></h3>
-    </ul>
-  </p>
-  <p>
-    <strong>1. 원단(핵심요소)</strong><br><br>
-    콘셉트의 느낌을 까장 잘 표현 할 수 있다.<br>
-    전달하고자 하는 느낌을 직접 만져 볼 수 있도록 해준다.<br>
-    Ex) 밀리터리가 스타일 주제면 두꺼운 면 또는 보일드 울 소재를 선택한다.
-  </p>
-  <p>
-    <strong>2. 색상</strong><br><br>
-    선택한 원단의 색상을 보면서 조색판을 구성한다.<br>
-    *조색판 : 컬렉션에 사용할 색상들의 모음 <br>
-    Tone, Tint, Shade, Hue, Stain wash, Dye 등
-  </P>
-  <p>
-    <strong>3. 형태(Fit)</strong><br><br>
-    패턴과 핏을 어떻게 가져갈 것인가를 결정<br>
-    Ex) 패딩(롱패딩, 하프패딩, 숏패딩) 등
-  </P>
-  <p>
-    <strong>4. 분위기(Mood)</strong><br><br>
-    전체적인 콘셉트를 결정하는 분위기 주제<br>
-    Ex) 미국 스포츠 컨트리클럽, 락앤록 밴드, 올드스쿨 등
-  </P>
-  <p>
-    <ul>
-      <h3><li>콘셉트를 위한 <u>아이디어</u></li></h3>
-    </ul>
-  </p>
-  <p>
-    1. 역사(전통의상, 시대의상 등)<br><br>
-    2. 쇼핑 츨장(백화점, 로드샵, 빈티지매장, 명품매장 등)<br><br>
-    3. 길거리 스타일(뉴욕, 도쿄, LA, 파리, 런던, 앤트워프, 밀라노)
-  </P>
-  <p>
-    <ul>
-      <h3><li>트렌드 분석 서비스</li></h3>
-    </ul>
-  </p>
-  <p>
-    1. 패션 산업 무역 전시회(워크샵)<br><br>
-    2. 웹사이트(<a href="https://wwd.com" target=_blank>wwd.com</a>, <a href="https://www.wgsn.com/en/" target="_blank">wgsn.com</a>, <a href="https://www.wgsn.com/en/" target="_blank">stylesight.com</a>)<br><br>
-    원단, 색상, 인테리어, 데님, 신발, 모자, 의류 등 트렌드를 분석헤주는 사이트<br><br>
-    3. <a href="http://modeinfo.com" target="_blank">modeinfo.com</a>(트렌드 책자와 보고서를 발매)
-  </p>
+  <h1><a href="fashion.html">CONCEPT</a></h1>
+    <p id=서자>
+      컬렉션의 기초 토대가 되고 제품 개발, 출시, 생산 과정에서 중요한 역할을 한다.<br>
+      컬렉션 시작 단계 부터 형성 하고, 디자인의 색상, 분위기, 원단 등을 사욤함에 있어 방향을 제시 해주는 역할.
+    </p>
+  <div id=plus>
+    <div id=구찌>
+      <img src="cucci.jpg" width="500px" height="400px"><br>
+      <img src="gucci.jpg" width="440px" height="650px">
+    </div>
+    <div>
+        <h3><요소></h3>
+        <p>
+          <strong>1. 원단(핵심요소)</strong><br><br>
+          콘셉트의 느낌을 까장 잘 표현 할 수 있다.<br>
+          전달하고자 하는 느낌을 직접 만져 볼 수 있도록 해준다.<br>
+          Ex) 밀리터리가 스타일 주제면 두꺼운 면 또는 보일드 울 소재를 선택한다.
+        </p>
+        <p>
+          <strong>2. 색상</strong><br><br>
+          선택한 원단의 색상을 보면서 조색판을 구성한다.<br>
+          *조색판 : 컬렉션에 사용할 색상들의 모음 <br>
+          Tone, Tint, Shade, Hue, Stain wash, Dye 등
+        </P>
+        <p>
+          <strong>3. 형태(Fit)</strong><br><br>
+          패턴과 핏을 어떻게 가져갈 것인가를 결정<br>
+          Ex) 패딩(롱패딩, 하프패딩, 숏패딩) 등
+        </P>
+        <p>
+          <strong>4. 분위기(Mood)</strong><br><br>
+          전체적인 콘셉트를 결정하는 분위기 주제<br>
+          Ex) 미국 스포츠 컨트리클럽, 락앤록 밴드, 올드스쿨 등
+        </P>
+          <h3><콘셉트를 위한 <u>아이디어></u></h3>
+        <p>
+          <strong>1. 역사</strong><br><br>
+          - 전통의상, 시대의상 등
+        </p>
+        <p>
+          <strong>2. 쇼핑 츨장</strong><br><br>
+          - 백화점, 로드샵, 빈티지매장, 명품매장 등
+        </p>
+        <p>
+          <strong>3. 길거리 스타일</strong><br><br>
+           - 뉴욕, 도쿄, LA, 파리, 런던, 앤트워프, 밀라노 등
+        </p>
+          <h3><트렌드 분석 서비스></h3>
+        <p>
+          <strong>1. 패션 산업 무역 전시회(워크샵)</strong>
+        </p>
+        <p>
+          <strong>2. 웹사이트(<a href="https://wwd.com" target=_blank>wwd.com</a>, <a href="https://www.wgsn.com/en/" target="_blank">wgsn.com</a>, <a href="https://www.wgsn.com/en/" target="_blank">stylesight.com</a>)</strong><br><br>
+          - 원단, 색상, 인테리어, 데님, 신발, 모자, 의류 등 트렌드를 분석헤주는 사이트
+        </p>
+        <p>
+          <strong>3. <a href="http://modeinfo.com" target="_blank">modeinfo.com</a></strong><br><br>
+          - 트렌드 책자와 보고서를 발매
+        </p>
+    </div>
+  </div>
