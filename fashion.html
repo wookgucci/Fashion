@@ -3,11 +3,8 @@
 <html>
   <head>
     <title>Fashion Business</title>
+  <link rel="stylesheet" href="hero.css">
 <style>
-    h1 {
-      color:gold; font-size: 60px; text-align: center; border-bottom: 1px solid black;
-      padding-bottom: 48px; padding-top: 20px;
-    }
     a{
       text-decoration: none; color:salmon; line-height: 80px;
       font-size: 25px;
@@ -15,43 +12,18 @@
     .index{
       text-align: center;
     }
-
 </style>
+  <script src="NightDayHandler.js"></script>
   </head>
-
 <body style="background-color:ivory;">
-  <input type="button" value="night"
+  <input type="button" value="Night Mode"
   onclick="
-    var target = document.querySelector('body');
-    var title = document.querySelector('h1');
-    if (this.value === 'night'){
-      target.style.backgroundColor = 'dimgray';
-      target,title.style.color = 'white';
-      this.value = 'day';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'white';
-        i = i + 1;
-      }
-
-
-    } else {
-        target.style.backgroundColor = 'powderblue';
-        target,title.style.color = 'black';
-        this.value = 'night';
-
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'black';
-          i = i + 1;
-        }
-
-    }
+    handler(this);
   ">
-  <h1>Fashion Business</h1>
+  <div class="hero-image"></div>
+  <div class="hero-text">
+  <h1 style="font-size:100px">Fashion Business</h1>
+  </div>
     <div class=index>
       <div><a href="concept.html" title="Concept">CONCEPT</a></div>
       <div><a href="range.html" title="Range Planning">Range Planning</a></div>
